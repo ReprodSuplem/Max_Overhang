@@ -1,0 +1,27 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Output data
+*.log
+*.out
+*.png
+*.csv
+*.tex
+results_N6_35/
+results_pareto/
+results*/
+results_N6_35/**
+results_pareto/**
+results*/**
+
+# Mac OS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# WSL
+*:Zone.Identifier
