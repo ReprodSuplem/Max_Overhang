@@ -1,0 +1,124 @@
+--- EXPERIMENT START | METHOD = M4_WarmStart | N = 8 | ETA = 0.1000 | SEED = 42 ---
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2815369
+Academic license 2815369 - for non-commercial use only - registered to az___@wakayama-u.ac.jp
+INFO: Injecting SODA Warm-Start (Eta = 0.1000, Overhang = 1.44511) | Certified Min Layer L_8 >= 4
+Set parameter NonConvex to value 2
+Set parameter Threads to value 1
+Set parameter MIPGap to value 0.0005
+Set parameter Seed to value 42
+Set parameter TimeLimit to value 3600
+
+================================================================================
+META: Method=M4_WarmStart | N=8 | Eta=0.1000 | Seed=42 | TimeLimit=3600s | Threads=1 | MIPGap=0.0005
+================================================================================
+Gurobi Optimizer version 13.0.1 build v13.0.1rc0 (linux64 - "Ubuntu 24.04.3 LTS")
+
+CPU model: Intel(R) Core(TM) Ultra 7 265K, instruction set [SSE2|AVX|AVX2]
+Thread count: 20 physical cores, 20 logical processors, using up to 1 threads
+
+Non-default parameters:
+TimeLimit  3600
+MIPGap  0.0005
+NonConvex  2
+Seed  42
+Threads  1
+
+Academic license 2815369 - for non-commercial use only - registered to az___@wakayama-u.ac.jp
+Optimize a model with 389 rows, 150 columns and 1103 nonzeros (Max)
+Model fingerprint: 0x1b35f8ce
+Model has 1 linear objective coefficients
+Model has 28 quadratic constraints
+Model has 1 simple general constraint
+  1 MAX
+Variable types: 105 continuous, 45 integer (36 binary)
+Coefficient statistics:
+  Matrix range     [1e-01, 3e+01]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [5e-02, 3e+01]
+  RHS range        [3e-01, 8e+00]
+
+[PROGRESS] Time:     0.00s | Event: NEW_SOL  | ObjVal: -10000000000000000159028911097599180468360808563945281389781327557747838772170381060813469985856815104.00000 | BestBound: 10000000000000000159028911097599180468360808563945281389781327557747838772170381060813469985856815104.00000 | Gap:      inf% | Nodes: 0
+Loaded user MIP start with objective 1.44511
+
+Presolve removed 98 rows and 30 columns
+Presolve time: 0.00s
+Presolved: 379 rows, 121 columns, 1034 nonzeros
+Presolved model has 22 bilinear constraint(s)
+
+Solving non-convex MIQCP to global optimality
+
+Variable types: 84 continuous, 37 integer (32 binary)
+
+Root relaxation: objective 4.100000e+00, 129 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    4.10000    0   16    1.44511    4.10000   184%     -    0s
+     0     0    4.10000    0   25    1.44511    4.10000   184%     -    0s
+     0     0    4.10000    0   25    1.44511    4.10000   184%     -    0s
+     0     0    4.10000    0   25    1.44511    4.10000   184%     -    0s
+     0     0    4.10000    0   28    1.44511    4.10000   184%     -    0s
+     0     0    4.10000    0   28    1.44511    4.10000   184%     -    0s
+     0     0    4.10000    0   10    1.44511    4.10000   184%     -    0s
+     0     0    4.10000    0   10    1.44511    4.10000   184%     -    0s
+     0     0    4.10000    0   15    1.44511    4.10000   184%     -    0s
+     0     0    4.10000    0   11    1.44511    4.10000   184%     -    0s
+     0     0    4.10000    0   11    1.44511    4.10000   184%     -    0s
+     0     2    4.10000    0   11    1.44511    4.10000   184%     -    0s
+[PROGRESS] Time:     0.08s | Event: NEW_SOL  | ObjVal:    1.44511 | BestBound:    4.10000 | Gap: 183.7149% | Nodes: 4
+H    4     4                       1.4451129    4.10000   184%  98.0    0s
+H 1453    95                       1.4639041    1.91581  30.9%  16.6    0s
+
+Cutting planes:
+  Learned: 3
+  Gomory: 2
+  Cover: 47
+  Implied bound: 170
+  Clique: 1
+  MIR: 11
+  Flow cover: 16
+  Inf proof: 35
+  RLT: 15
+  Relax-and-lift: 10
+  BQP: 1
+
+Explored 3694 nodes (31677 simplex iterations) in 1.26 seconds (1.32 work units)
+Thread count was 1 (of 20 available processors)
+
+Solution count 3: 1.4639 1.44511 1.44511 
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 1.463904060635e+00, best bound 1.464609803253e+00, gap 0.0482%
+
+User-callback calls 8438, time in user-callback 0.01 sec
+
+================================================================================
+SUMMARY_REPORT:
+  Method           : M4_WarmStart
+  N                : 8
+  Eta              : 0.1000
+  Status           : OPTIMAL
+  ObjVal           : 1.46390
+  BestBound        : 1.46461
+  MIPGap_Pct       : 0.0482%
+  Runtime_Sec      : 1.2571
+  FirstSol_Sec     : 0.0787
+  NodeCount        : 3694
+  SolCount         : 3
+================================================================================
+
+STACK_CONFIGURATION:
+  Layer  5 | Block  8 | Center X:  0.12196 | Supported by: [6, 7]
+  Layer  4 | Block  7 | Center X: -0.32132 | Supported by: [4, 5]
+  Layer  4 | Block  6 | Center X:  0.96390 | Supported by: [4]
+  Layer  3 | Block  5 | Center X: -0.60549 | Supported by: [2, 3]
+  Layer  3 | Block  4 | Center X:  0.45161 | Supported by: [2]
+  Layer  2 | Block  3 | Center X: -0.89365 | Supported by: [1]
+  Layer  2 | Block  2 | Center X:  0.10635 | Supported by: [1]
+  Layer  1 | Block  1 | Center X: -0.22336 | Supported by: [0]
+--- EXPERIMENT END | METHOD = M4_WarmStart | N = 8 | ETA = 0.1000 ---

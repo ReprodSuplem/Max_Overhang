@@ -10,12 +10,12 @@ __pycache__/
 *.png
 *.csv
 *.tex
-results_N6_35/
-results_pareto/
 results*/
-results_N6_35/**
-results_pareto/**
 results*/**
+!results_N6_35/
+!results_N6_35/**
+!results_pareto/
+!results_pareto/**
 
 # Mac OS
 .DS_Store

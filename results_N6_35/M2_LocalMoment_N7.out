@@ -1,0 +1,123 @@
+--- EXPERIMENT START | METHOD = M2_LocalMoment | N = 7 | SEED = 42 ---
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2815369
+Academic license 2815369 - for non-commercial use only - registered to az___@wakayama-u.ac.jp
+Set parameter NonConvex to value 2
+Set parameter Threads to value 1
+Set parameter MIPGap to value 0.0005
+Set parameter Seed to value 42
+Set parameter TimeLimit to value 3600
+
+================================================================================
+META: Method=M2_LocalMoment | N=7 | Seed=42 | TimeLimit=3600s | Threads=1 | MIPGap=0.0005
+================================================================================
+Gurobi Optimizer version 13.0.1 build v13.0.1rc0 (linux64 - "Ubuntu 24.04.3 LTS")
+
+CPU model: Intel(R) Core(TM) Ultra 7 265K, instruction set [SSE2|AVX|AVX2]
+Thread count: 20 physical cores, 20 logical processors, using up to 1 threads
+
+Non-default parameters:
+TimeLimit  3600
+MIPGap  0.0005
+NonConvex  2
+Seed  42
+Threads  1
+
+Academic license 2815369 - for non-commercial use only - registered to az___@wakayama-u.ac.jp
+Optimize a model with 293 rows, 118 columns and 812 nonzeros (Max)
+Model fingerprint: 0x5f1205d6
+Model has 1 linear objective coefficients
+Model has 21 quadratic constraints
+Model has 1 simple general constraint
+  1 MAX
+Variable types: 82 continuous, 36 integer (28 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [5e-01, 2e+01]
+  RHS range        [5e-01, 7e+00]
+
+Presolve removed 58 rows and 17 columns
+Presolve time: 0.00s
+Presolved: 307 rows, 102 columns, 829 nonzeros
+Presolved model has 18 bilinear constraint(s)
+
+Solving non-convex MIQCP to global optimality
+
+Variable types: 71 continuous, 31 integer (27 binary)
+[PROGRESS] Time:     0.00s | Event: PERIODIC | ObjVal:         NA | BestBound:    4.00000 | Gap:       NA | Nodes: 0
+
+Root relaxation: objective 4.000000e+00, 133 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    4.00000    0   14          -    4.00000      -     -    0s
+[PROGRESS] Time:     0.01s | Event: NEW_SOL  | ObjVal: -10000000000000000159028911097599180468360808563945281389781327557747838772170381060813469985856815104.00000 | BestBound:    4.00000 | Gap:      inf% | Nodes: 0
+H    0     0                       1.2863941    4.00000   211%     -    0s
+     0     0    4.00000    0   17    1.28639    4.00000   211%     -    0s
+     0     0    4.00000    0   13    1.28639    4.00000   211%     -    0s
+     0     0    4.00000    0   20    1.28639    4.00000   211%     -    0s
+     0     0    4.00000    0   26    1.28639    4.00000   211%     -    0s
+     0     0    4.00000    0    8    1.28639    4.00000   211%     -    0s
+     0     0    4.00000    0   13    1.28639    4.00000   211%     -    0s
+     0     0    4.00000    0   16    1.28639    4.00000   211%     -    0s
+     0     0    4.00000    0   19    1.28639    4.00000   211%     -    0s
+     0     0    4.00000    0   13    1.28639    4.00000   211%     -    0s
+     0     0    4.00000    0   13    1.28639    4.00000   211%     -    0s
+[PROGRESS] Time:     0.08s | Event: NEW_SOL  | ObjVal:    1.28639 | BestBound:    4.00000 | Gap: 210.9467% | Nodes: 0
+H    0     0                       1.2863941    4.00000   211%     -    0s
+     0     2    4.00000    0   13    1.28639    4.00000   211%     -    0s
+H    1     1                       1.4833428    4.00000   170%   0.0    0s
+[PROGRESS] Time:     0.10s | Event: NEW_SOL  | ObjVal:    1.48334 | BestBound:    4.00000 | Gap: 169.6612% | Nodes: 5
+H    5     5                       1.5300452    4.00000   161%  38.4    0s
+
+Cutting planes:
+  Learned: 16
+  Gomory: 1
+  Cover: 29
+  Implied bound: 78
+  MIR: 11
+  Flow cover: 15
+  Inf proof: 13
+  Zero half: 2
+  RLT: 17
+  Relax-and-lift: 5
+
+Explored 1563 nodes (14647 simplex iterations) in 0.61 seconds (0.55 work units)
+Thread count was 1 (of 20 available processors)
+
+Solution count 3: 1.53005 1.48334 1.28639 
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 1.530045231061e+00, best bound 1.530805064828e+00, gap 0.0497%
+
+User-callback calls 4007, time in user-callback 0.00 sec
+
+================================================================================
+SUMMARY_REPORT:
+  Method           : M2_LocalMoment
+  N                : 7
+  Status           : OPTIMAL
+  ObjVal           : 1.53005
+  BestBound        : 1.53081
+  MIPGap_Pct       : 0.0497%
+  Runtime_Sec      : 0.6126
+  FirstSol_Sec     : 0.0764
+  NodeCount        : 1563
+  SolCount         : 3
+================================================================================
+
+STACK_CONFIGURATION:
+  Layer  4 | Block  7 | Center X: -0.70804 | Supported by: [5]
+  Layer  4 | Block  6 | Center X:  0.32439 | Supported by: [4, 5]
+  Layer  3 | Block  5 | Center X: -0.24460 | Supported by: [2, 3]
+  Layer  3 | Block  4 | Center X:  1.03005 | Supported by: [2]
+  Layer  2 | Block  3 | Center X: -0.72107 | Supported by: [1]
+  Layer  2 | Block  2 | Center X:  0.40333 | Supported by: [1]
+  Layer  1 | Block  1 | Center X: -0.08405 | Supported by: [0]
+INFO: Saved visualization to results_N6_35/M2_LocalMoment_N7.png
+--- EXPERIMENT END | METHOD = M2_LocalMoment | N = 7 ---

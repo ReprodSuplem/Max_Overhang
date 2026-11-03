@@ -1,0 +1,147 @@
+--- EXPERIMENT START | METHOD = M3_ConvexHull | N = 9 | SEED = 42 ---
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2815369
+Academic license 2815369 - for non-commercial use only - registered to az___@wakayama-u.ac.jp
+Set parameter NonConvex to value 2
+Set parameter Threads to value 1
+Set parameter MIPGap to value 0.0005
+Set parameter Seed to value 42
+Set parameter TimeLimit to value 3600
+
+================================================================================
+META: Method=M3_ConvexHull | N=9 | Seed=42 | TimeLimit=3600s | Threads=1 | MIPGap=0.0005
+================================================================================
+Gurobi Optimizer version 13.0.1 build v13.0.1rc0 (linux64 - "Ubuntu 24.04.3 LTS")
+
+CPU model: Intel(R) Core(TM) Ultra 7 265K, instruction set [SSE2|AVX|AVX2]
+Thread count: 20 physical cores, 20 logical processors, using up to 1 threads
+
+Non-default parameters:
+TimeLimit  3600
+MIPGap  0.0005
+NonConvex  2
+Seed  42
+Threads  1
+
+Academic license 2815369 - for non-commercial use only - registered to az___@wakayama-u.ac.jp
+Optimize a model with 487 rows, 186 columns and 1394 nonzeros (Max)
+Model fingerprint: 0x15e10b01
+Model has 1 linear objective coefficients
+Model has 36 quadratic constraints
+Model has 1 simple general constraint
+  1 MAX
+Variable types: 131 continuous, 55 integer (45 binary)
+Coefficient statistics:
+  Matrix range     [6e-02, 4e+01]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [4e-01, 4e+01]
+  RHS range        [4e-01, 9e+00]
+
+Presolve removed 84 rows and 23 columns
+Presolve time: 0.00s
+Presolved: 527 rows, 164 columns, 1448 nonzeros
+Presolved model has 31 bilinear constraint(s)
+
+Solving non-convex MIQCP to global optimality
+
+Variable types: 114 continuous, 50 integer (44 binary)
+[PROGRESS] Time:     0.00s | Event: PERIODIC | ObjVal:         NA | BestBound:    5.00000 | Gap:       NA | Nodes: 0
+
+Root relaxation: objective 5.000000e+00, 247 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    5.00000    0   25          -    5.00000      -     -    0s
+     0     0    5.00000    0   32          -    5.00000      -     -    0s
+     0     0    5.00000    0   31          -    5.00000      -     -    0s
+     0     0    5.00000    0   31          -    5.00000      -     -    0s
+     0     0    5.00000    0   12          -    5.00000      -     -    0s
+     0     0    5.00000    0   11          -    5.00000      -     -    0s
+     0     0    5.00000    0   21          -    5.00000      -     -    0s
+     0     0    5.00000    0   21          -    5.00000      -     -    0s
+     0     0    5.00000    0   20          -    5.00000      -     -    0s
+     0     0    5.00000    0   18          -    5.00000      -     -    0s
+     0     0    5.00000    0   16          -    5.00000      -     -    0s
+     0     0    5.00000    0   16          -    5.00000      -     -    0s
+     0     0    5.00000    0   16          -    5.00000      -     -    0s
+     0     2    5.00000    0   16          -    5.00000      -     -    0s
+[PROGRESS] Time:     0.10s | Event: NEW_SOL  | ObjVal: -10000000000000000159028911097599180468360808563945281389781327557747838772170381060813469985856815104.00000 | BestBound:    5.00000 | Gap:      inf% | Nodes: 31
+H   31    22                       1.6111111    5.00000   210%  21.3    0s
+[PROGRESS] Time:     0.11s | Event: NEW_SOL  | ObjVal:    1.61111 | BestBound:    5.00000 | Gap: 210.3448% | Nodes: 77
+*   77    36              48       1.6111112    5.00000   210%  10.7    0s
+H   79    32                       1.6111118    5.00000   210%  10.5    0s
+H  155    52                       1.6686690    5.00000   200%  28.7    0s
+[PROGRESS] Time:     0.17s | Event: NEW_SOL  | ObjVal:    1.66867 | BestBound:    5.00000 | Gap: 199.6400% | Nodes: 156
+H  156    53                       1.6686690    5.00000   200%  28.5    0s
+H  283   100                       1.6686690    5.00000   200%  26.0    0s
+H 1788   321                       1.6686690    5.00000   200%  43.4    1s
+[PROGRESS] Time:     2.17s | Event: PERIODIC | ObjVal:    1.66867 | BestBound:    5.00000 | Gap: 199.6400% | Nodes: 1960
+H 2653   397                       1.6686690    4.99462   199%  44.2    2s
+[PROGRESS] Time:     4.17s | Event: PERIODIC | ObjVal:    1.66867 | BestBound:    4.55093 | Gap: 172.7281% | Nodes: 4491
+  5807   588 infeasible   24         1.66867    4.14178   148%  41.1    5s
+H 6467   567                       1.6728681    3.63073   117%  40.5    5s
+[PROGRESS] Time:     5.60s | Event: NEW_SOL  | ObjVal:    1.67287 | BestBound:    3.51506 | Gap: 110.1220% | Nodes: 6955
+* 6955   643              40       1.6754870    3.51506   110%  38.9    5s
+[PROGRESS] Time:     5.60s | Event: NEW_SOL  | ObjVal:    1.67549 | BestBound:    3.51506 | Gap: 109.7936% | Nodes: 6956
+* 6956   641              40       1.6756587    3.51506   110%  38.9    5s
+[PROGRESS] Time:     5.60s | Event: NEW_SOL  | ObjVal:    1.67566 | BestBound:    3.51506 | Gap: 109.7721% | Nodes: 6968
+* 6968   643              45       1.6757515    3.51506   110%  38.9    5s
+[PROGRESS] Time:     5.60s | Event: NEW_SOL  | ObjVal:    1.67575 | BestBound:    3.51506 | Gap: 109.7604% | Nodes: 6970
+* 6970   641              44       1.6757558    3.51506   110%  38.9    5s
+[PROGRESS] Time:     5.73s | Event: NEW_SOL  | ObjVal:    1.67576 | BestBound:    3.12051 | Gap:  86.2151% | Nodes: 7293
+H 7293   575                       1.7152728    3.12051  81.9%  38.1    5s
+[PROGRESS] Time:     7.73s | Event: PERIODIC | ObjVal:    1.71527 | BestBound:    2.03408 | Gap:  18.5862% | Nodes: 12166
+[PROGRESS] Time:     9.75s | Event: PERIODIC | ObjVal:    1.71527 | BestBound:    1.74154 | Gap:   1.5313% | Nodes: 19659
+ 20640   680 infeasible   45         1.71527    1.73278  1.02%  18.2   10s
+[PROGRESS] Time:    11.75s | Event: PERIODIC | ObjVal:    1.71527 | BestBound:    1.71923 | Gap:   0.2306% | Nodes: 27938
+[PROGRESS] Time:    13.75s | Event: PERIODIC | ObjVal:    1.71527 | BestBound:    1.71660 | Gap:   0.0771% | Nodes: 36213
+
+Cutting planes:
+  Cover: 5
+  Implied bound: 5
+  Projected implied bound: 5
+  MIR: 4
+  Flow cover: 12
+  RLT: 4
+  Relax-and-lift: 3
+
+Explored 41070 nodes (422913 simplex iterations) in 14.97 seconds (17.41 work units)
+Thread count was 1 (of 20 available processors)
+
+Solution count 10: 1.71527 1.67576 1.67575 ... 1.66867
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 1.715272807541e+00, best bound 1.716129234196e+00, gap 0.0499%
+
+User-callback calls 86198, time in user-callback 0.08 sec
+
+================================================================================
+SUMMARY_REPORT:
+  Method           : M3_ConvexHull
+  N                : 9
+  Status           : OPTIMAL
+  ObjVal           : 1.71527
+  BestBound        : 1.71613
+  MIPGap_Pct       : 0.0499%
+  Runtime_Sec      : 14.9740
+  FirstSol_Sec     : 0.1128
+  NodeCount        : 41070
+  SolCount         : 10
+================================================================================
+
+STACK_CONFIGURATION:
+  Layer  6 | Block  9 | Center X: -0.14595 | Supported by: [8]
+  Layer  5 | Block  8 | Center X:  0.26520 | Supported by: [6, 7]
+  Layer  4 | Block  7 | Center X: -0.31988 | Supported by: [4, 5]
+  Layer  4 | Block  6 | Center X:  1.21527 | Supported by: [4]
+  Layer  3 | Block  5 | Center X: -0.67104 | Supported by: [2, 3]
+  Layer  3 | Block  4 | Center X:  0.61144 | Supported by: [2]
+  Layer  2 | Block  3 | Center X: -0.92412 | Supported by: [1]
+  Layer  2 | Block  2 | Center X:  0.16457 | Supported by: [1]
+  Layer  1 | Block  1 | Center X: -0.19549 | Supported by: [0]
+INFO: Saved visualization to results_N6_35/M3_ConvexHull_N9.png
+--- EXPERIMENT END | METHOD = M3_ConvexHull | N = 9 ---

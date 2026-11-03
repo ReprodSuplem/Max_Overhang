@@ -1,0 +1,143 @@
+--- EXPERIMENT START | METHOD = M2_LocalMoment | N = 6 | SEED = 42 ---
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2815369
+Academic license 2815369 - for non-commercial use only - registered to az___@wakayama-u.ac.jp
+Set parameter NonConvex to value 2
+Set parameter Threads to value 1
+Set parameter MIPGap to value 0.0005
+Set parameter Seed to value 42
+Set parameter TimeLimit to value 3600
+
+================================================================================
+META: Method=M2_LocalMoment | N=6 | Seed=42 | TimeLimit=3600s | Threads=1 | MIPGap=0.0005
+================================================================================
+Gurobi Optimizer version 13.0.1 build v13.0.1rc0 (linux64 - "Ubuntu 24.04.3 LTS")
+
+CPU model: Intel(R) Core(TM) Ultra 7 265K, instruction set [SSE2|AVX|AVX2]
+Thread count: 20 physical cores, 20 logical processors, using up to 1 threads
+
+Non-default parameters:
+TimeLimit  3600
+MIPGap  0.0005
+NonConvex  2
+Seed  42
+Threads  1
+
+Academic license 2815369 - for non-commercial use only - registered to az___@wakayama-u.ac.jp
+Optimize a model with 218 rows, 90 columns and 594 nonzeros (Max)
+Model fingerprint: 0x598ac398
+Model has 1 linear objective coefficients
+Model has 15 quadratic constraints
+Model has 1 simple general constraint
+  1 MAX
+Variable types: 62 continuous, 28 integer (21 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [5e-01, 2e+01]
+  RHS range        [5e-01, 6e+00]
+
+Presolve removed 47 rows and 14 columns
+Presolve time: 0.00s
+Presolved: 223 rows, 77 columns, 594 nonzeros
+Presolved model has 13 bilinear constraint(s)
+
+Solving non-convex MIQCP to global optimality
+
+Variable types: 54 continuous, 23 integer (20 binary)
+[PROGRESS] Time:     0.00s | Event: PERIODIC | ObjVal:         NA | BestBound:    3.50000 | Gap:       NA | Nodes: 0
+
+Root relaxation: objective 3.500000e+00, 81 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    3.50000    0    6          -    3.50000      -     -    0s
+[PROGRESS] Time:     0.01s | Event: NEW_SOL  | ObjVal: -10000000000000000159028911097599180468360808563945281389781327557747838772170381060813469985856815104.00000 | BestBound:    3.50000 | Gap:      inf% | Nodes: 0
+H    0     0                       1.0166667    3.50000   244%     -    0s
+[PROGRESS] Time:     0.01s | Event: NEW_SOL  | ObjVal:    1.01667 | BestBound:    3.50000 | Gap: 244.2623% | Nodes: 0
+H    0     0                       1.1666667    3.50000   200%     -    0s
+     0     0    3.50000    0   16    1.16667    3.50000   200%     -    0s
+     0     0    3.50000    0   17    1.16667    3.50000   200%     -    0s
+     0     0    3.50000    0   18    1.16667    3.50000   200%     -    0s
+     0     0    3.50000    0   18    1.16667    3.50000   200%     -    0s
+[PROGRESS] Time:     0.01s | Event: NEW_SOL  | ObjVal:    1.16667 | BestBound:    3.50000 | Gap: 200.0000% | Nodes: 0
+H    0     0                       1.2166667    3.50000   188%     -    0s
+     0     0    3.50000    0   12    1.21667    3.50000   188%     -    0s
+     0     0    3.50000    0   12    1.21667    3.50000   188%     -    0s
+[PROGRESS] Time:     0.02s | Event: NEW_SOL  | ObjVal:    1.21667 | BestBound:    3.50000 | Gap: 187.6712% | Nodes: 0
+H    0     0                       1.2239476    3.50000   186%     -    0s
+[PROGRESS] Time:     0.02s | Event: NEW_SOL  | ObjVal:    1.22395 | BestBound:    3.50000 | Gap: 185.9599% | Nodes: 0
+H    0     0                       1.2240104    3.50000   186%     -    0s
+[PROGRESS] Time:     0.02s | Event: NEW_SOL  | ObjVal:    1.22401 | BestBound:    3.50000 | Gap: 185.9453% | Nodes: 0
+H    0     0                       1.2241495    3.50000   186%     -    0s
+[PROGRESS] Time:     0.02s | Event: NEW_SOL  | ObjVal:    1.22415 | BestBound:    3.50000 | Gap: 185.9128% | Nodes: 0
+H    0     0                       1.2250667    3.50000   186%     -    0s
+[PROGRESS] Time:     0.02s | Event: NEW_SOL  | ObjVal:    1.22507 | BestBound:    3.50000 | Gap: 185.6987% | Nodes: 0
+H    0     0                       1.2250787    3.50000   186%     -    0s
+     0     0    3.50000    0   12    1.22508    3.50000   186%     -    0s
+     0     0    3.50000    0   12    1.22508    3.50000   186%     -    0s
+     0     0    3.50000    0   12    1.22508    3.50000   186%     -    0s
+[PROGRESS] Time:     0.03s | Event: NEW_SOL  | ObjVal:    1.22508 | BestBound:    3.50000 | Gap: 185.6959% | Nodes: 0
+H    0     0                       1.2927829    3.50000   171%     -    0s
+[PROGRESS] Time:     0.04s | Event: NEW_SOL  | ObjVal:    1.29278 | BestBound:    3.50000 | Gap: 170.7338% | Nodes: 0
+H    0     0                       1.3508778    3.50000   159%     -    0s
+     0     2    3.50000    0   12    1.35088    3.50000   159%     -    0s
+[PROGRESS] Time:     0.04s | Event: NEW_SOL  | ObjVal:    1.35088 | BestBound:    3.50000 | Gap: 159.0908% | Nodes: 1
+H    1     1                       1.3508778    3.50000   159%   0.0    0s
+H    6     6                       1.3878027    3.50000   152%  36.7    0s
+[PROGRESS] Time:     0.05s | Event: NEW_SOL  | ObjVal:    1.38780 | BestBound:    3.50000 | Gap: 152.1972% | Nodes: 6
+H    6     6                       1.3878882    3.50000   152%  36.7    0s
+[PROGRESS] Time:     0.08s | Event: NEW_SOL  | ObjVal:    1.38789 | BestBound:    3.11781 | Gap: 124.6440% | Nodes: 92
+H   92    23                       1.4166667    3.11781   120%  17.7    0s
+[PROGRESS] Time:     0.08s | Event: NEW_SOL  | ObjVal:    1.41667 | BestBound:    3.11781 | Gap: 120.0806% | Nodes: 94
+H   94    25                       1.4178932    3.11781   120%  17.5    0s
+[PROGRESS] Time:     0.08s | Event: NEW_SOL  | ObjVal:    1.41789 | BestBound:    3.11781 | Gap: 119.8902% | Nodes: 95
+H   95    26                       1.4367002    3.11781   117%  17.4    0s
+
+Cutting planes:
+  Learned: 3
+  Gomory: 1
+  Cover: 14
+  Implied bound: 41
+  MIR: 11
+  Inf proof: 1
+  RLT: 5
+  Relax-and-lift: 1
+
+Explored 494 nodes (3569 simplex iterations) in 0.15 seconds (0.14 work units)
+Thread count was 1 (of 20 available processors)
+
+Solution count 10: 1.4367 1.41789 1.41667 ... 1.22507
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 1.436700208362e+00, best bound 1.437359271376e+00, gap 0.0459%
+
+User-callback calls 1755, time in user-callback 0.00 sec
+
+================================================================================
+SUMMARY_REPORT:
+  Method           : M2_LocalMoment
+  N                : 6
+  Status           : OPTIMAL
+  ObjVal           : 1.43670
+  BestBound        : 1.43736
+  MIPGap_Pct       : 0.0459%
+  Runtime_Sec      : 0.1493
+  FirstSol_Sec     : 0.0070
+  NodeCount        : 494
+  SolCount         : 10
+================================================================================
+
+STACK_CONFIGURATION:
+  Layer  4 | Block  6 | Center X:  0.06715 | Supported by: [4, 5]
+  Layer  3 | Block  5 | Center X: -0.42454 | Supported by: [2, 3]
+  Layer  3 | Block  4 | Center X:  0.93670 | Supported by: [2]
+  Layer  2 | Block  3 | Center X: -0.77960 | Supported by: [1]
+  Layer  2 | Block  2 | Center X:  0.32796 | Supported by: [1]
+  Layer  1 | Block  1 | Center X: -0.12768 | Supported by: [0]
+INFO: Saved visualization to results_N6_35/M2_LocalMoment_N6.png
+--- EXPERIMENT END | METHOD = M2_LocalMoment | N = 6 ---

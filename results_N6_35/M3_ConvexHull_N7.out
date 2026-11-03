@@ -1,0 +1,154 @@
+--- EXPERIMENT START | METHOD = M3_ConvexHull | N = 7 | SEED = 42 ---
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2815369
+Academic license 2815369 - for non-commercial use only - registered to az___@wakayama-u.ac.jp
+Set parameter NonConvex to value 2
+Set parameter Threads to value 1
+Set parameter MIPGap to value 0.0005
+Set parameter Seed to value 42
+Set parameter TimeLimit to value 3600
+
+================================================================================
+META: Method=M3_ConvexHull | N=7 | Seed=42 | TimeLimit=3600s | Threads=1 | MIPGap=0.0005
+================================================================================
+Gurobi Optimizer version 13.0.1 build v13.0.1rc0 (linux64 - "Ubuntu 24.04.3 LTS")
+
+CPU model: Intel(R) Core(TM) Ultra 7 265K, instruction set [SSE2|AVX|AVX2]
+Thread count: 20 physical cores, 20 logical processors, using up to 1 threads
+
+Non-default parameters:
+TimeLimit  3600
+MIPGap  0.0005
+NonConvex  2
+Seed  42
+Threads  1
+
+Academic license 2815369 - for non-commercial use only - registered to az___@wakayama-u.ac.jp
+Optimize a model with 302 rows, 118 columns and 846 nonzeros (Max)
+Model fingerprint: 0x70cf8331
+Model has 1 linear objective coefficients
+Model has 21 quadratic constraints
+Model has 1 simple general constraint
+  1 MAX
+Variable types: 82 continuous, 36 integer (28 binary)
+Coefficient statistics:
+  Matrix range     [7e-02, 2e+01]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [4e-01, 2e+01]
+  RHS range        [4e-01, 7e+00]
+
+Presolve removed 62 rows and 17 columns
+Presolve time: 0.00s
+Presolved: 312 rows, 102 columns, 842 nonzeros
+Presolved model has 18 bilinear constraint(s)
+
+Solving non-convex MIQCP to global optimality
+
+Variable types: 71 continuous, 31 integer (27 binary)
+[PROGRESS] Time:     0.00s | Event: PERIODIC | ObjVal:         NA | BestBound:    4.00000 | Gap:       NA | Nodes: 0
+
+Root relaxation: objective 4.000000e+00, 134 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    4.00000    0   11          -    4.00000      -     -    0s
+[PROGRESS] Time:     0.01s | Event: NEW_SOL  | ObjVal: -10000000000000000159028911097599180468360808563945281389781327557747838772170381060813469985856815104.00000 | BestBound:    4.00000 | Gap:      inf% | Nodes: 0
+H    0     0                       1.3392857    4.00000   199%     -    0s
+     0     0    4.00000    0   18    1.33929    4.00000   199%     -    0s
+[PROGRESS] Time:     0.01s | Event: NEW_SOL  | ObjVal:    1.33929 | BestBound:    4.00000 | Gap: 198.6667% | Nodes: 0
+H    0     0                       1.3392857    4.00000   199%     -    0s
+     0     0    4.00000    0   18    1.33929    4.00000   199%     -    0s
+     0     0    4.00000    0   11    1.33929    4.00000   199%     -    0s
+     0     0    4.00000    0   11    1.33929    4.00000   199%     -    0s
+     0     0    4.00000    0    8    1.33929    4.00000   199%     -    0s
+     0     0    4.00000    0   13    1.33929    4.00000   199%     -    0s
+     0     0    4.00000    0    9    1.33929    4.00000   199%     -    0s
+     0     0    4.00000    0    9    1.33929    4.00000   199%     -    0s
+H    0     0                       1.3814954    4.00000   190%     -    0s
+[PROGRESS] Time:     0.04s | Event: NEW_SOL  | ObjVal:    1.38150 | BestBound:    4.00000 | Gap: 189.5413% | Nodes: 0
+H    0     0                       1.3818257    4.00000   189%     -    0s
+[PROGRESS] Time:     0.04s | Event: NEW_SOL  | ObjVal:    1.38183 | BestBound:    4.00000 | Gap: 189.4721% | Nodes: 0
+H    0     0                       1.3818425    4.00000   189%     -    0s
+[PROGRESS] Time:     0.04s | Event: NEW_SOL  | ObjVal:    1.38184 | BestBound:    4.00000 | Gap: 189.4686% | Nodes: 0
+H    0     0                       1.3818456    4.00000   189%     -    0s
+[PROGRESS] Time:     0.04s | Event: NEW_SOL  | ObjVal:    1.38185 | BestBound:    4.00000 | Gap: 189.4679% | Nodes: 0
+H    0     0                       1.3820766    4.00000   189%     -    0s
+[PROGRESS] Time:     0.04s | Event: NEW_SOL  | ObjVal:    1.38208 | BestBound:    4.00000 | Gap: 189.4196% | Nodes: 0
+H    0     0                       1.3821533    4.00000   189%     -    0s
+[PROGRESS] Time:     0.04s | Event: NEW_SOL  | ObjVal:    1.38215 | BestBound:    4.00000 | Gap: 189.4035% | Nodes: 0
+H    0     0                       1.3821744    4.00000   189%     -    0s
+[PROGRESS] Time:     0.04s | Event: NEW_SOL  | ObjVal:    1.38217 | BestBound:    4.00000 | Gap: 189.3991% | Nodes: 0
+H    0     0                       1.3821790    4.00000   189%     -    0s
+[PROGRESS] Time:     0.04s | Event: NEW_SOL  | ObjVal:    1.38218 | BestBound:    4.00000 | Gap: 189.3981% | Nodes: 0
+H    0     0                       1.3821790    4.00000   189%     -    0s
+     0     2    4.00000    0    9    1.38218    4.00000   189%     -    0s
+H   39    23                       1.3966914    4.00000   186%  46.1    0s
+[PROGRESS] Time:     0.10s | Event: NEW_SOL  | ObjVal:    1.39669 | BestBound:    4.00000 | Gap: 186.3911% | Nodes: 73
+*   73    35              11       1.4142857    4.00000   183%  36.8    0s
+[PROGRESS] Time:     0.10s | Event: NEW_SOL  | ObjVal:    1.41429 | BestBound:    4.00000 | Gap: 182.8283% | Nodes: 75
+H   75    29                       1.4818302    4.00000   170%  35.8    0s
+[PROGRESS] Time:     0.11s | Event: NEW_SOL  | ObjVal:    1.48183 | BestBound:    4.00000 | Gap: 169.9365% | Nodes: 101
+*  101    41              25       1.4818302    4.00000   170%  27.2    0s
+H  165    36                       1.4851930    4.00000   169%  25.2    0s
+[PROGRESS] Time:     0.15s | Event: NEW_SOL  | ObjVal:    1.48519 | BestBound:    4.00000 | Gap: 169.3253% | Nodes: 213
+H  213    46                       1.4851930    4.00000   169%  25.1    0s
+H  422    57                       1.4967479    3.42103   129%  22.9    0s
+[PROGRESS] Time:     0.39s | Event: NEW_SOL  | ObjVal:    1.49675 | BestBound:    2.95043 | Gap:  97.1229% | Nodes: 542
+H  542    50                       1.5190489    2.95043  94.2%  23.0    0s
+[PROGRESS] Time:     0.45s | Event: NEW_SOL  | ObjVal:    1.51905 | BestBound:    2.73250 | Gap:  79.8826% | Nodes: 724
+H  724    57                       1.5300452    2.73250  78.6%  19.9    0s
+[PROGRESS] Time:     0.45s | Event: NEW_SOL  | ObjVal:    1.53005 | BestBound:    2.73250 | Gap:  78.5898% | Nodes: 729
+H  729    60                       1.5300452    2.73250  78.6%  19.8    0s
+H 1731    34                       1.5300452    1.53132  0.08%  11.1    0s
+
+Cutting planes:
+  Learned: 6
+  Gomory: 2
+  Cover: 42
+  Implied bound: 82
+  MIR: 9
+  Flow cover: 6
+  Inf proof: 15
+  Zero half: 1
+  Mod-K: 2
+  RLT: 10
+  Relax-and-lift: 2
+
+Explored 1810 nodes (19569 simplex iterations) in 0.78 seconds (0.64 work units)
+Thread count was 1 (of 20 available processors)
+
+Solution count 10: 1.53005 1.53005 1.53005 ... 1.39669
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 1.530045239586e+00, best bound 1.530806402641e+00, gap 0.0497%
+
+User-callback calls 4541, time in user-callback 0.01 sec
+
+================================================================================
+SUMMARY_REPORT:
+  Method           : M3_ConvexHull
+  N                : 7
+  Status           : OPTIMAL
+  ObjVal           : 1.53005
+  BestBound        : 1.53081
+  MIPGap_Pct       : 0.0497%
+  Runtime_Sec      : 0.7840
+  FirstSol_Sec     : 0.0112
+  NodeCount        : 1810
+  SolCount         : 10
+================================================================================
+
+STACK_CONFIGURATION:
+  Layer  4 | Block  7 | Center X: -0.68145 | Supported by: [5]
+  Layer  4 | Block  6 | Center X:  0.39033 | Supported by: [4, 5]
+  Layer  3 | Block  5 | Center X: -0.18145 | Supported by: [2, 3]
+  Layer  3 | Block  4 | Center X:  1.03005 | Supported by: [2]
+  Layer  2 | Block  3 | Center X: -0.87674 | Supported by: [1]
+  Layer  2 | Block  2 | Center X:  0.40334 | Supported by: [1]
+  Layer  1 | Block  1 | Center X: -0.08408 | Supported by: [0]
+INFO: Saved visualization to results_N6_35/M3_ConvexHull_N7.png
+--- EXPERIMENT END | METHOD = M3_ConvexHull | N = 7 ---

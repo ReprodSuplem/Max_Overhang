@@ -1,0 +1,152 @@
+--- EXPERIMENT START | METHOD = Baseline | N = 6 | SEED = 42 ---
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2815369
+Academic license 2815369 - for non-commercial use only - registered to az___@wakayama-u.ac.jp
+Set parameter NonConvex to value 2
+Set parameter Threads to value 1
+Set parameter MIPGap to value 0.0005
+Set parameter Seed to value 42
+Set parameter TimeLimit to value 3600
+
+================================================================================
+META: Method=Baseline | N=6 | Seed=42 | TimeLimit=3600s | Threads=1 | MIPGap=0.0005
+================================================================================
+Gurobi Optimizer version 13.0.1 build v13.0.1rc0 (linux64 - "Ubuntu 24.04.3 LTS")
+
+CPU model: Intel(R) Core(TM) Ultra 7 265K, instruction set [SSE2|AVX|AVX2]
+Thread count: 20 physical cores, 20 logical processors, using up to 1 threads
+
+Non-default parameters:
+TimeLimit  3600
+MIPGap  0.0005
+NonConvex  2
+Seed  42
+Threads  1
+
+Academic license 2815369 - for non-commercial use only - registered to az___@wakayama-u.ac.jp
+Optimize a model with 455 rows, 222 columns and 1251 nonzeros (Max)
+Model fingerprint: 0x08aecb83
+Model has 1 linear objective coefficients
+Model has 36 quadratic constraints
+Model has 1 simple general constraint
+  1 MAX
+Variable types: 161 continuous, 61 integer (54 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 4e+01]
+  RHS range        [5e-01, 1e+01]
+
+Presolve removed 285 rows and 144 columns
+Presolve time: 0.00s
+Presolved: 226 rows, 79 columns, 601 nonzeros
+Presolved model has 14 bilinear constraint(s)
+
+Solving non-convex MIQCP to global optimality
+
+Variable types: 56 continuous, 23 integer (20 binary)
+[PROGRESS] Time:     0.00s | Event: PERIODIC | ObjVal:         NA | BestBound:    6.00000 | Gap:       NA | Nodes: 0
+
+Root relaxation: objective 6.000000e+00, 87 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    6.00000    0   12          -    6.00000      -     -    0s
+[PROGRESS] Time:     0.01s | Event: NEW_SOL  | ObjVal: -10000000000000000159028911097599180468360808563945281389781327557747838772170381060813469985856815104.00000 | BestBound:    6.00000 | Gap:      inf% | Nodes: 0
+H    0     0                       0.9738095    6.00000   516%     -    0s
+     0     0    6.00000    0   23    0.97381    6.00000   516%     -    0s
+[PROGRESS] Time:     0.02s | Event: NEW_SOL  | ObjVal:    0.97381 | BestBound:    6.00000 | Gap: 516.1369% | Nodes: 0
+H    0     0                       0.9812889    6.00000   511%     -    0s
+[PROGRESS] Time:     0.02s | Event: NEW_SOL  | ObjVal:    0.98129 | BestBound:    6.00000 | Gap: 511.4407% | Nodes: 0
+H    0     0                       0.9813338    6.00000   511%     -    0s
+[PROGRESS] Time:     0.02s | Event: NEW_SOL  | ObjVal:    0.98133 | BestBound:    6.00000 | Gap: 511.4128% | Nodes: 0
+H    0     0                       0.9813851    6.00000   511%     -    0s
+[PROGRESS] Time:     0.02s | Event: NEW_SOL  | ObjVal:    0.98139 | BestBound:    6.00000 | Gap: 511.3808% | Nodes: 0
+H    0     0                       1.0023387    6.00000   499%     -    0s
+[PROGRESS] Time:     0.02s | Event: NEW_SOL  | ObjVal:    1.00234 | BestBound:    6.00000 | Gap: 498.6001% | Nodes: 0
+H    0     0                       1.0028461    6.00000   498%     -    0s
+[PROGRESS] Time:     0.02s | Event: NEW_SOL  | ObjVal:    1.00285 | BestBound:    6.00000 | Gap: 498.2972% | Nodes: 0
+H    0     0                       1.0047807    6.00000   497%     -    0s
+     0     0    6.00000    0   23    1.00478    6.00000   497%     -    0s
+     0     0    6.00000    0   16    1.00478    6.00000   497%     -    0s
+[PROGRESS] Time:     0.02s | Event: NEW_SOL  | ObjVal:    1.00478 | BestBound:    6.00000 | Gap: 497.1452% | Nodes: 0
+H    0     0                       1.1010283    6.00000   445%     -    0s
+     0     0    6.00000    0   12    1.10103    6.00000   445%     -    0s
+     0     0    6.00000    0   12    1.10103    6.00000   445%     -    0s
+     0     0    6.00000    0   20    1.10103    6.00000   445%     -    0s
+     0     0    6.00000    0    9    1.10103    6.00000   445%     -    0s
+     0     0    6.00000    0   14    1.10103    6.00000   445%     -    0s
+     0     0    6.00000    0   22    1.10103    6.00000   445%     -    0s
+     0     0    6.00000    0    8    1.10103    6.00000   445%     -    0s
+     0     0    6.00000    0   19    1.10103    6.00000   445%     -    0s
+     0     0    6.00000    0   21    1.10103    6.00000   445%     -    0s
+     0     0    6.00000    0   10    1.10103    6.00000   445%     -    0s
+     0     0    6.00000    0   19    1.10103    6.00000   445%     -    0s
+     0     0    6.00000    0   11    1.10103    6.00000   445%     -    0s
+     0     2    6.00000    0   11    1.10103    6.00000   445%     -    0s
+[PROGRESS] Time:     0.06s | Event: NEW_SOL  | ObjVal:    1.10103 | BestBound:    6.00000 | Gap: 444.9451% | Nodes: 1
+H    1     1                       1.1666667    6.00000   414%   0.0    0s
+[PROGRESS] Time:     0.06s | Event: NEW_SOL  | ObjVal:    1.16667 | BestBound:    4.01230 | Gap: 243.9116% | Nodes: 5
+H    5     5                       1.2833333    4.01230   213%  33.2    0s
+[PROGRESS] Time:     0.06s | Event: NEW_SOL  | ObjVal:    1.28333 | BestBound:    4.01230 | Gap: 212.6469% | Nodes: 12
+*   12    10               8       1.3333333    4.01230   201%  30.2    0s
+[PROGRESS] Time:     0.06s | Event: NEW_SOL  | ObjVal:    1.33333 | BestBound:    4.01230 | Gap: 200.9227% | Nodes: 13
+H   13     9                       1.3508778    4.01230   197%  27.9    0s
+[PROGRESS] Time:     0.07s | Event: NEW_SOL  | ObjVal:    1.35088 | BestBound:    4.01230 | Gap: 197.0144% | Nodes: 42
+*   42    15              23       1.3508784    4.01230   197%  10.7    0s
+H  134    16                       1.3750000    3.25827   137%  14.0    0s
+[PROGRESS] Time:     0.11s | Event: NEW_SOL  | ObjVal:    1.37500 | BestBound:    3.25827 | Gap: 136.9648% | Nodes: 147
+H  147    17                       1.4367002    3.25827   127%  14.0    0s
+[PROGRESS] Time:     0.11s | Event: NEW_SOL  | ObjVal:    1.43670 | BestBound:    3.25827 | Gap: 126.7882% | Nodes: 152
+H  152    20                       1.4367002    3.25827   127%  14.8    0s
+H 1153    63                       1.4367002    1.44192  0.36%   5.3    0s
+* 1415   115              46       1.4367004    1.43810  0.10%   4.7    0s
+
+Cutting planes:
+  Learned: 12
+  Cover: 14
+  Implied bound: 34
+  MIR: 9
+  Flow cover: 9
+  Flow path: 1
+  Inf proof: 3
+  RLT: 9
+  Relax-and-lift: 4
+
+Explored 1505 nodes (7448 simplex iterations) in 0.48 seconds (0.37 work units)
+Thread count was 1 (of 20 available processors)
+
+Solution count 10: 1.4367 1.4367 1.4367 ... 1.10103
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 1.436700369622e+00, best bound 1.437365533725e+00, gap 0.0463%
+
+User-callback calls 3945, time in user-callback 0.00 sec
+
+================================================================================
+SUMMARY_REPORT:
+  Method           : Baseline
+  N                : 6
+  Status           : OPTIMAL
+  ObjVal           : 1.43670
+  BestBound        : 1.43737
+  MIPGap_Pct       : 0.0463%
+  Runtime_Sec      : 0.4796
+  FirstSol_Sec     : 0.0154
+  NodeCount        : 1505
+  SolCount         : 10
+================================================================================
+
+STACK_CONFIGURATION:
+  Layer  4 | Block  6 | Center X: -0.06330 | Supported by: [4, 5]
+  Layer  3 | Block  5 | Center X: -0.23589 | Supported by: [2, 3]
+  Layer  3 | Block  4 | Center X:  0.93670 | Supported by: [2]
+  Layer  2 | Block  3 | Center X: -0.83801 | Supported by: [1]
+  Layer  2 | Block  2 | Center X:  0.32815 | Supported by: [1]
+  Layer  1 | Block  1 | Center X: -0.12765 | Supported by: [0]
+INFO: Saved visualization to results_N6_35/Baseline_N6.png
+--- EXPERIMENT END | METHOD = Baseline | N = 6 ---

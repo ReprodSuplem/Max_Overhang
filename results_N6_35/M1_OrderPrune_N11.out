@@ -1,0 +1,417 @@
+--- EXPERIMENT START | METHOD = M1_OrderPrune | N = 11 | SEED = 42 ---
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2815369
+Academic license 2815369 - for non-commercial use only - registered to az___@wakayama-u.ac.jp
+Set parameter NonConvex to value 2
+Set parameter Threads to value 1
+Set parameter MIPGap to value 0.0005
+Set parameter Seed to value 42
+Set parameter TimeLimit to value 3600
+
+================================================================================
+META: Method=M1_OrderPrune | N=11 | Seed=42 | TimeLimit=3600s | Threads=1 | MIPGap=0.0005
+================================================================================
+Gurobi Optimizer version 13.0.1 build v13.0.1rc0 (linux64 - "Ubuntu 24.04.3 LTS")
+
+CPU model: Intel(R) Core(TM) Ultra 7 265K, instruction set [SSE2|AVX|AVX2]
+Thread count: 20 physical cores, 20 logical processors, using up to 1 threads
+
+Non-default parameters:
+TimeLimit  3600
+MIPGap  0.0005
+NonConvex  2
+Seed  42
+Threads  1
+
+Academic license 2815369 - for non-commercial use only - registered to az___@wakayama-u.ac.jp
+Optimize a model with 702 rows, 270 columns and 2032 nonzeros (Max)
+Model fingerprint: 0x22f57d26
+Model has 1 linear objective coefficients
+Model has 55 quadratic constraints
+Model has 1 simple general constraint
+  1 MAX
+Variable types: 192 continuous, 78 integer (66 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [5e-01, 1e+02]
+  RHS range        [5e-01, 2e+01]
+
+Presolve removed 101 rows and 29 columns
+Presolve time: 0.00s
+Presolved: 793 rows, 242 columns, 2208 nonzeros
+Presolved model has 48 bilinear constraint(s)
+
+Solving non-convex MIQCP to global optimality
+
+Variable types: 169 continuous, 73 integer (65 binary)
+[PROGRESS] Time:     0.01s | Event: PERIODIC | ObjVal:         NA | BestBound:   11.00000 | Gap:       NA | Nodes: 0
+
+Root relaxation: objective 1.100000e+01, 259 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   11.00000    0   23          -   11.00000      -     -    0s
+     0     0   11.00000    0   40          -   11.00000      -     -    0s
+     0     0   11.00000    0   38          -   11.00000      -     -    0s
+     0     0   11.00000    0   44          -   11.00000      -     -    0s
+     0     0   11.00000    0   33          -   11.00000      -     -    0s
+     0     0   11.00000    0   33          -   11.00000      -     -    0s
+     0     0   11.00000    0   20          -   11.00000      -     -    0s
+     0     0   11.00000    0   20          -   11.00000      -     -    0s
+     0     0   11.00000    0   20          -   11.00000      -     -    0s
+     0     0   11.00000    0   22          -   11.00000      -     -    0s
+     0     0   11.00000    0   22          -   11.00000      -     -    0s
+     0     0   11.00000    0   21          -   11.00000      -     -    0s
+     0     0   11.00000    0   18          -   11.00000      -     -    0s
+     0     2   11.00000    0   18          -   11.00000      -     -    0s
+[PROGRESS] Time:     0.43s | Event: NEW_SOL  | ObjVal: -10000000000000000159028911097599180468360808563945281389781327557747838772170381060813469985856815104.00000 | BestBound:   11.00000 | Gap:      inf% | Nodes: 423
+H  423   130                       1.3636364   11.00000   707%  29.7    0s
+[PROGRESS] Time:     0.49s | Event: NEW_SOL  | ObjVal:    1.36364 | BestBound:   11.00000 | Gap: 706.6667% | Nodes: 512
+H  512   123                       1.4540184   11.00000   657%  29.4    0s
+[PROGRESS] Time:     0.49s | Event: NEW_SOL  | ObjVal:    1.45402 | BestBound:   11.00000 | Gap: 656.5241% | Nodes: 512
+H  512   123                       1.5191230   11.00000   624%  29.4    0s
+[PROGRESS] Time:     0.49s | Event: NEW_SOL  | ObjVal:    1.51912 | BestBound:   11.00000 | Gap: 624.1020% | Nodes: 512
+H  512   121                       1.5236208   11.00000   622%  29.4    0s
+[PROGRESS] Time:     0.49s | Event: NEW_SOL  | ObjVal:    1.52362 | BestBound:   11.00000 | Gap: 621.9644% | Nodes: 512
+H  512   121                       1.5236233   11.00000   622%  29.4    0s
+[PROGRESS] Time:     0.49s | Event: NEW_SOL  | ObjVal:    1.52362 | BestBound:   11.00000 | Gap: 621.9632% | Nodes: 512
+H  512   121                       1.5278261   11.00000   620%  29.4    0s
+[PROGRESS] Time:     0.50s | Event: NEW_SOL  | ObjVal:    1.52783 | BestBound:   11.00000 | Gap: 619.9772% | Nodes: 512
+H  512   121                       1.5281434   11.00000   620%  29.4    0s
+[PROGRESS] Time:     0.50s | Event: NEW_SOL  | ObjVal:    1.52814 | BestBound:   11.00000 | Gap: 619.8277% | Nodes: 512
+H  512   121                       1.5281439   11.00000   620%  29.4    0s
+H  512   121                       1.5281441   11.00000   620%  29.4    0s
+H  983   232                       1.5281443   11.00000   620%  33.9    0s
+H 1105   271                       1.6037542   11.00000   586%  34.7    0s
+[PROGRESS] Time:     0.96s | Event: NEW_SOL  | ObjVal:    1.60375 | BestBound:   11.00000 | Gap: 585.8906% | Nodes: 1105
+H 1105   271                       1.6039906   11.00000   586%  34.7    0s
+[PROGRESS] Time:     0.96s | Event: NEW_SOL  | ObjVal:    1.60399 | BestBound:   11.00000 | Gap: 585.7895% | Nodes: 1105
+H 1105   271                       1.6055239   11.00000   585%  34.7    0s
+[PROGRESS] Time:     0.97s | Event: NEW_SOL  | ObjVal:    1.60552 | BestBound:   11.00000 | Gap: 585.1346% | Nodes: 1105
+H 1105   271                       1.6055765   11.00000   585%  34.7    0s
+[PROGRESS] Time:     0.97s | Event: NEW_SOL  | ObjVal:    1.60558 | BestBound:   11.00000 | Gap: 585.1122% | Nodes: 1105
+H 1105   271                       1.6060797   11.00000   585%  34.7    0s
+[PROGRESS] Time:     1.02s | Event: NEW_SOL  | ObjVal:    1.60608 | BestBound:   11.00000 | Gap: 584.8975% | Nodes: 1107
+H 1107   259                       1.6060797   11.00000   585%  34.7    1s
+H 1178   293                       1.6060799    7.00078   336%  43.1    1s
+[PROGRESS] Time:     3.09s | Event: PERIODIC | ObjVal:    1.60608 | BestBound:    6.80262 | Gap: 323.5543% | Nodes: 1213
+H 1369   323                       1.6550298    6.80032   311%  60.3    3s
+[PROGRESS] Time:     3.99s | Event: NEW_SOL  | ObjVal:    1.65503 | BestBound:    6.80032 | Gap: 310.8882% | Nodes: 1369
+H 1369   308                       1.6556702    6.80032   311%  60.3    3s
+[PROGRESS] Time:     3.99s | Event: NEW_SOL  | ObjVal:    1.65567 | BestBound:    6.80032 | Gap: 310.7293% | Nodes: 1369
+H 1369   294                       1.6558641    6.80032   311%  60.3    3s
+[PROGRESS] Time:     4.00s | Event: NEW_SOL  | ObjVal:    1.65586 | BestBound:    6.80032 | Gap: 310.6812% | Nodes: 1370
+H 1370   281                       1.6730547    6.80032   306%  60.4    3s
+[PROGRESS] Time:     4.00s | Event: NEW_SOL  | ObjVal:    1.67305 | BestBound:    6.80032 | Gap: 306.4615% | Nodes: 1370
+H 1370   268                       1.6730555    6.80032   306%  60.4    3s
+H 1370   255                       1.6730560    6.80032   306%  60.4    4s
+[PROGRESS] Time:     4.00s | Event: NEW_SOL  | ObjVal:    1.67306 | BestBound:    6.80032 | Gap: 306.4612% | Nodes: 1370
+H 1370   243                       1.6730560    6.80032   306%  60.4    4s
+* 1378   231              66       1.6777958    6.80032   305%  60.4    4s
+[PROGRESS] Time:     4.04s | Event: NEW_SOL  | ObjVal:    1.67780 | BestBound:    6.80032 | Gap: 305.3129% | Nodes: 1381
+H 1381   218                       1.6777958    6.80032   305%  60.3    4s
+H 1381   208                       1.6953033    6.80032   301%  60.3    4s
+[PROGRESS] Time:     4.04s | Event: NEW_SOL  | ObjVal:    1.69530 | BestBound:    6.80032 | Gap: 301.1272% | Nodes: 1381
+H 1381   199                       1.6968527    6.80032   301%  60.3    4s
+[PROGRESS] Time:     4.04s | Event: NEW_SOL  | ObjVal:    1.69685 | BestBound:    6.80032 | Gap: 300.7610% | Nodes: 1381
+H 1381   189                       1.6968527    6.80032   301%  60.3    4s
+* 1405   181              75       1.6968528    6.80032   301%  59.4    4s
+* 1406   172              76       1.6968529    6.80032   301%  59.3    4s
+H 1407   163                       1.6968534    6.80032   301%  59.3    4s
+  2088   413    6.50824   69   34    1.69685    6.64462   292%  64.8    5s
+* 2216   444              77       1.7062716    6.64462   289%  64.2    5s
+[PROGRESS] Time:     5.12s | Event: NEW_SOL  | ObjVal:    1.70627 | BestBound:    6.64462 | Gap: 289.4234% | Nodes: 2218
+H 2218   443                       1.7159965    6.64462   287%  64.2    5s
+[PROGRESS] Time:     5.13s | Event: NEW_SOL  | ObjVal:    1.71600 | BestBound:    6.64462 | Gap: 287.2164% | Nodes: 2238
+* 2238   445              87       1.7159966    6.64462   287%  63.6    5s
+H 2762   586                       1.7566911    6.64435   278%  60.9    5s
+[PROGRESS] Time:     5.68s | Event: NEW_SOL  | ObjVal:    1.75669 | BestBound:    6.64435 | Gap: 278.2307% | Nodes: 2762
+H 2762   586                       1.7566912    6.64435   278%  60.9    5s
+H 3245   727                       1.8265694    6.64364   264%  60.4    6s
+[PROGRESS] Time:     6.24s | Event: NEW_SOL  | ObjVal:    1.82657 | BestBound:    6.64364 | Gap: 263.7224% | Nodes: 3256
+H 3256   730                       1.8265694    6.64364   264%  60.3    6s
+H 3682   871                       1.8265694    6.64114   264%  56.8    6s
+H 3695   878                       1.8265694    6.64114   264%  56.8    6s
+H 3728   889                       1.8265695    6.64035   264%  57.2    6s
+[PROGRESS] Time:     8.24s | Event: PERIODIC | ObjVal:    1.82657 | BestBound:    6.53281 | Gap: 257.6544% | Nodes: 4714
+  6323  1562 infeasible   69         1.82657    6.44395   253%  62.0   10s
+[PROGRESS] Time:    10.24s | Event: PERIODIC | ObjVal:    1.82657 | BestBound:    6.35489 | Gap: 247.9138% | Nodes: 6513
+[PROGRESS] Time:    12.24s | Event: PERIODIC | ObjVal:    1.82657 | BestBound:    6.01961 | Gap: 229.5581% | Nodes: 8269
+[PROGRESS] Time:    14.25s | Event: PERIODIC | ObjVal:    1.82657 | BestBound:    5.87837 | Gap: 221.8258% | Nodes: 10109
+ 10202  2305 infeasible   72         1.82657    5.87776   222%  64.9   15s
+[PROGRESS] Time:    16.25s | Event: PERIODIC | ObjVal:    1.82657 | BestBound:    5.87409 | Gap: 221.5915% | Nodes: 10856
+[PROGRESS] Time:    18.25s | Event: PERIODIC | ObjVal:    1.82657 | BestBound:    5.73555 | Gap: 214.0067% | Nodes: 12676
+H13553  3015                       1.8265695    5.58590   206%  63.6   19s
+ 14366  3112    3.31103   72   15    1.82657    5.50427   201%  63.6   20s
+[PROGRESS] Time:    20.25s | Event: PERIODIC | ObjVal:    1.82657 | BestBound:    5.48895 | Gap: 200.5062% | Nodes: 14595
+H15815  3251                       1.8265695    5.35042   193%  63.6   21s
+[PROGRESS] Time:    22.25s | Event: PERIODIC | ObjVal:    1.82657 | BestBound:    5.26575 | Gap: 188.2862% | Nodes: 16479
+H17207  3371                       1.8265699    5.13620   181%  62.9   22s
+[PROGRESS] Time:    24.25s | Event: PERIODIC | ObjVal:    1.82657 | BestBound:    5.05983 | Gap: 177.0129% | Nodes: 18508
+ 19278  3682    4.82401   70   30    1.82657    5.05619   177%  62.1   25s
+[PROGRESS] Time:    26.25s | Event: PERIODIC | ObjVal:    1.82657 | BestBound:    5.05619 | Gap: 176.8132% | Nodes: 20475
+[PROGRESS] Time:    28.25s | Event: PERIODIC | ObjVal:    1.82657 | BestBound:    5.05498 | Gap: 176.7470% | Nodes: 22813
+ 25015  5001    4.89532   70   42    1.82657    5.01077   174%  59.0   30s
+[PROGRESS] Time:    30.26s | Event: PERIODIC | ObjVal:    1.82657 | BestBound:    4.99117 | Gap: 173.2540% | Nodes: 25321
+[PROGRESS] Time:    32.26s | Event: PERIODIC | ObjVal:    1.82657 | BestBound:    4.82586 | Gap: 164.2034% | Nodes: 27700
+[PROGRESS] Time:    34.26s | Event: PERIODIC | ObjVal:    1.82657 | BestBound:    4.81309 | Gap: 163.5044% | Nodes: 29842
+ 30678  5586    2.29142   72   18    1.82657    4.77990   162%  56.6   35s
+[PROGRESS] Time:    36.26s | Event: PERIODIC | ObjVal:    1.82657 | BestBound:    4.72810 | Gap: 158.8511% | Nodes: 31423
+H32904  5842                       1.8266668    4.63624   154%  55.3   37s
+[PROGRESS] Time:    37.30s | Event: NEW_SOL  | ObjVal:    1.82667 | BestBound:    4.63624 | Gap: 153.8085% | Nodes: 32905
+H32905  5843                       1.8266668    4.63624   154%  55.3   37s
+H33905  5890                       1.8363104    4.59435   150%  54.9   38s
+[PROGRESS] Time:    38.10s | Event: NEW_SOL  | ObjVal:    1.83631 | BestBound:    4.59435 | Gap: 150.1949% | Nodes: 33905
+H33905  5887                       1.8379043    4.59435   150%  54.9   38s
+[PROGRESS] Time:    38.11s | Event: NEW_SOL  | ObjVal:    1.83790 | BestBound:    4.59435 | Gap: 149.9779% | Nodes: 33905
+H33905  5865                       1.8413101    4.59435   150%  54.9   38s
+ 36155  5981    4.44563   76   40    1.84131    4.44572   141%  54.3   40s
+[PROGRESS] Time:    40.12s | Event: PERIODIC | ObjVal:    1.84131 | BestBound:    4.43929 | Gap: 141.0940% | Nodes: 36292
+[PROGRESS] Time:    41.15s | Event: NEW_SOL  | ObjVal:    1.84131 | BestBound:    4.31077 | Gap: 134.1142% | Nodes: 37583
+H37583  6039                       1.8449033    4.31077   134%  53.8   41s
+[PROGRESS] Time:    43.16s | Event: PERIODIC | ObjVal:    1.84490 | BestBound:    4.18864 | Gap: 127.0387% | Nodes: 40042
+[PROGRESS] Time:    44.79s | Event: NEW_SOL  | ObjVal:    1.84490 | BestBound:    4.09555 | Gap: 121.9928% | Nodes: 41926
+H41926  6316                       1.8449033    4.09555   122%  52.5   44s
+H41926  6316                       1.8449033    4.09555   122%  52.5   44s
+ 42137  6343    2.37750   77   14    1.84490    4.09555   122%  52.5   45s
+H42928  6457                       1.8449033    4.09555   122%  52.1   45s
+H42928  6449                       1.8456762    4.09555   122%  52.1   45s
+[PROGRESS] Time:    45.54s | Event: NEW_SOL  | ObjVal:    1.84568 | BestBound:    4.09555 | Gap: 121.8998% | Nodes: 42928
+H42928  6407                       1.8523292    4.09555   121%  52.1   45s
+[PROGRESS] Time:    45.54s | Event: NEW_SOL  | ObjVal:    1.85233 | BestBound:    4.09555 | Gap: 121.1028% | Nodes: 42928
+H42928  6407                       1.8523298    4.09555   121%  52.1   45s
+H43047  6412                       1.8559223    4.09555   121%  52.0   45s
+[PROGRESS] Time:    45.68s | Event: NEW_SOL  | ObjVal:    1.85592 | BestBound:    4.09555 | Gap: 120.6748% | Nodes: 43047
+H43047  6412                       1.8561808    4.09555   121%  52.0   45s
+[PROGRESS] Time:    45.68s | Event: NEW_SOL  | ObjVal:    1.85618 | BestBound:    4.09555 | Gap: 120.6440% | Nodes: 43047
+H43047  6412                       1.8561808    4.09555   121%  52.0   45s
+H44048  6490                       1.8575620    4.09555   120%  51.6   46s
+[PROGRESS] Time:    46.41s | Event: NEW_SOL  | ObjVal:    1.85756 | BestBound:    4.09555 | Gap: 120.4800% | Nodes: 44048
+H44048  6489                       1.8582008    4.09555   120%  51.6   46s
+[PROGRESS] Time:    46.41s | Event: NEW_SOL  | ObjVal:    1.85820 | BestBound:    4.09555 | Gap: 120.4042% | Nodes: 44048
+H44048  6489                       1.8582022    4.09555   120%  51.6   46s
+[PROGRESS] Time:    46.41s | Event: NEW_SOL  | ObjVal:    1.85820 | BestBound:    4.09555 | Gap: 120.4040% | Nodes: 44048
+H44048  6489                       1.8582025    4.09555   120%  51.6   46s
+H44048  6489                       1.8582227    4.09555   120%  51.6   46s
+[PROGRESS] Time:    46.81s | Event: NEW_SOL  | ObjVal:    1.85822 | BestBound:    4.09555 | Gap: 120.4016% | Nodes: 44489
+H44489  6508                       1.8582228    4.09555   120%  51.6   46s
+[PROGRESS] Time:    48.81s | Event: PERIODIC | ObjVal:    1.85822 | BestBound:    4.03306 | Gap: 117.0388% | Nodes: 47000
+ 48478  6755 infeasible   74         1.85822    3.90969   110%  50.5   50s
+[PROGRESS] Time:    50.81s | Event: PERIODIC | ObjVal:    1.85822 | BestBound:    3.80855 | Gap: 104.9564% | Nodes: 49626
+H50534  6696                       1.8583111    3.75843   102%  49.9   51s
+[PROGRESS] Time:    52.81s | Event: PERIODIC | ObjVal:    1.85831 | BestBound:    3.63082 | Gap:  95.3827% | Nodes: 52330
+[PROGRESS] Time:    53.38s | Event: NEW_SOL  | ObjVal:    1.85831 | BestBound:    3.59555 | Gap:  93.4849% | Nodes: 53146
+H53146  6722                       1.8583273    3.59555  93.5%  49.0   53s
+[PROGRESS] Time:    53.43s | Event: NEW_SOL  | ObjVal:    1.85833 | BestBound:    3.59555 | Gap:  93.4833% | Nodes: 53189
+H53189  6727                       1.8583278    3.59555  93.5%  48.9   53s
+H53200  6730                       1.8583279    3.59555  93.5%  48.9   53s
+ 55477  6836    2.95603   71   22    1.85833    3.56103  91.6%  48.2   55s
+[PROGRESS] Time:    55.43s | Event: PERIODIC | ObjVal:    1.85833 | BestBound:    3.52385 | Gap:  89.6245% | Nodes: 56102
+[PROGRESS] Time:    57.43s | Event: PERIODIC | ObjVal:    1.85833 | BestBound:    3.33590 | Gap:  79.5110% | Nodes: 59094
+H59870  6746                       1.8585611    3.30520  77.8%  46.8   57s
+[PROGRESS] Time:    59.44s | Event: PERIODIC | ObjVal:    1.85856 | BestBound:    3.13514 | Gap:  68.6865% | Nodes: 62269
+ 63331  6617    1.91602   80   12    1.85856    3.11371  67.5%  45.6   60s
+[PROGRESS] Time:    61.44s | Event: PERIODIC | ObjVal:    1.85856 | BestBound:    3.06103 | Gap:  64.6987% | Nodes: 65623
+[PROGRESS] Time:    63.44s | Event: PERIODIC | ObjVal:    1.85856 | BestBound:    2.87075 | Gap:  54.4610% | Nodes: 69927
+ 72332  6706    2.61172   77   10    1.85856    2.86220  54.0%  42.7   65s
+[PROGRESS] Time:    65.44s | Event: PERIODIC | ObjVal:    1.85856 | BestBound:    2.83631 | Gap:  52.6077% | Nodes: 73313
+[PROGRESS] Time:    66.67s | Event: NEW_SOL  | ObjVal:    1.85856 | BestBound:    2.72856 | Gap:  46.8103% | Nodes: 76344
+H76344  6884                       1.8587795    2.72856  46.8%  41.2   66s
+[PROGRESS] Time:    66.71s | Event: NEW_SOL  | ObjVal:    1.85878 | BestBound:    2.72843 | Gap:  46.7861% | Nodes: 76345
+H76345  6885                       1.8587795    2.72843  46.8%  41.2   66s
+[PROGRESS] Time:    68.71s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    2.66344 | Gap:  43.2896% | Nodes: 79276
+ 81410  7215 infeasible   77         1.85878    2.64183  42.1%  39.8   70s
+[PROGRESS] Time:    70.73s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    2.64183 | Gap:  42.1270% | Nodes: 82236
+[PROGRESS] Time:    72.73s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    2.64183 | Gap:  42.1269% | Nodes: 86334
+[PROGRESS] Time:    74.74s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    2.64183 | Gap:  42.1269% | Nodes: 90168
+ 90840  7801 infeasible   79         1.85878    2.63636  41.8%  38.3   75s
+[PROGRESS] Time:    76.74s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    2.56671 | Gap:  38.0860% | Nodes: 95811
+[PROGRESS] Time:    78.74s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    2.48828 | Gap:  33.8663% | Nodes: 102076
+ 106146  9003     cutoff   91         1.85878    2.44545  31.6%  34.2   80s
+[PROGRESS] Time:    80.74s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    2.42022 | Gap:  30.2048% | Nodes: 108456
+[PROGRESS] Time:    82.74s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    2.37075 | Gap:  27.5434% | Nodes: 114571
+H120620 10113                       1.8587795    2.32900  25.3%  31.1   84s
+[PROGRESS] Time:    84.74s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    2.32900 | Gap:  25.2974% | Nodes: 120621
+ 121418 10170 infeasible   85         1.85878    2.32313  25.0%  30.9   85s
+[PROGRESS] Time:    86.74s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    2.29257 | Gap:  23.3373% | Nodes: 126364
+[PROGRESS] Time:    88.74s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    2.25758 | Gap:  21.4550% | Nodes: 132734
+ 136811 11018 infeasible   82         1.85878    2.23789  20.4%  28.3   90s
+[PROGRESS] Time:    90.74s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    2.22467 | Gap:  19.6845% | Nodes: 139354
+[PROGRESS] Time:    92.74s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    2.19528 | Gap:  18.1036% | Nodes: 146229
+[PROGRESS] Time:    94.74s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    2.17564 | Gap:  17.0469% | Nodes: 152919
+ 153874 11704 infeasible   79         1.85878    2.17272  16.9%  25.9   95s
+[PROGRESS] Time:    96.74s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    2.15283 | Gap:  15.8195% | Nodes: 159916
+[PROGRESS] Time:    98.74s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    2.13006 | Gap:  14.5946% | Nodes: 166563
+ 170713 12063    1.86368   96   11    1.85878    2.11559  13.8%  23.9  100s
+[PROGRESS] Time:   100.74s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    2.10860 | Gap:  13.4403% | Nodes: 173039
+[PROGRESS] Time:   102.74s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    2.09643 | Gap:  12.7855% | Nodes: 177492
+[PROGRESS] Time:   104.74s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    2.07994 | Gap:  11.8981% | Nodes: 184034
+ 184925 12340    1.88366   93    9    1.85878    2.07795  11.8%  22.5  105s
+[PROGRESS] Time:   106.74s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    2.06266 | Gap:  10.9684% | Nodes: 191051
+[PROGRESS] Time:   108.74s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    2.04744 | Gap:  10.1498% | Nodes: 197483
+ 201068 12537    1.89314   94   10    1.85878    2.04323  9.92%  21.3  110s
+[PROGRESS] Time:   110.74s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    2.03792 | Gap:   9.6377% | Nodes: 203621
+H206585 12768                       1.8587796    2.03244  9.34%  20.9  111s
+[PROGRESS] Time:   112.74s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    2.02561 | Gap:   8.9751% | Nodes: 210041
+[PROGRESS] Time:   114.74s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    2.01368 | Gap:   8.3337% | Nodes: 216373
+ 217287 13020 infeasible   69         1.85878    2.01169  8.23%  20.1  115s
+[PROGRESS] Time:   116.76s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    2.00145 | Gap:   7.6753% | Nodes: 222903
+[PROGRESS] Time:   118.76s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.99062 | Gap:   7.0930% | Nodes: 229845
+ 234010 13255    1.91249   94   13    1.85878    1.98399  6.74%  19.0  120s
+[PROGRESS] Time:   120.76s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.98030 | Gap:   6.5379% | Nodes: 236549
+[PROGRESS] Time:   122.76s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.97111 | Gap:   6.0432% | Nodes: 243357
+[PROGRESS] Time:   124.76s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.96155 | Gap:   5.5290% | Nodes: 250438
+ 251230 13339 infeasible   95         1.85878    1.96044  5.47%  18.0  125s
+[PROGRESS] Time:   126.77s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.95280 | Gap:   5.0583% | Nodes: 257186
+[PROGRESS] Time:   128.79s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.94471 | Gap:   4.6232% | Nodes: 263477
+ 267512 13358    1.93709   90   12    1.85878    1.94023  4.38%  17.2  130s
+[PROGRESS] Time:   130.79s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.93741 | Gap:   4.2300% | Nodes: 270240
+[PROGRESS] Time:   132.79s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.93096 | Gap:   3.8832% | Nodes: 276766
+[PROGRESS] Time:   134.79s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.92701 | Gap:   3.6708% | Nodes: 281177
+ 281847 13357    1.89545   93    9    1.85878    1.92622  3.63%  16.5  135s
+[PROGRESS] Time:   136.79s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.92048 | Gap:   3.3194% | Nodes: 287397
+[PROGRESS] Time:   138.80s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.91513 | Gap:   3.0318% | Nodes: 293907
+ 298224 13307 infeasible   83         1.85878    1.91184  2.85%  15.9  140s
+[PROGRESS] Time:   140.80s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.90992 | Gap:   2.7512% | Nodes: 301072
+[PROGRESS] Time:   142.80s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.90578 | Gap:   2.5286% | Nodes: 307482
+[PROGRESS] Time:   144.80s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.90221 | Gap:   2.3363% | Nodes: 314206
+ 314834 13545    1.88871   93   10    1.85878    1.90173  2.31%  15.2  145s
+[PROGRESS] Time:   146.80s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.89856 | Gap:   2.1399% | Nodes: 320917
+[PROGRESS] Time:   148.80s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.89570 | Gap:   1.9865% | Nodes: 327328
+ 331505 13549 infeasible   99         1.85878    1.89411  1.90%  14.6  150s
+[PROGRESS] Time:   150.84s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.89298 | Gap:   1.8397% | Nodes: 334476
+[PROGRESS] Time:   152.84s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.89022 | Gap:   1.6914% | Nodes: 341381
+[PROGRESS] Time:   154.84s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.88777 | Gap:   1.5594% | Nodes: 348418
+ 349071 13750    1.88281   95   10    1.85878    1.88754  1.55%  14.1  155s
+[PROGRESS] Time:   156.84s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.88508 | Gap:   1.4150% | Nodes: 355222
+[PROGRESS] Time:   158.84s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.88260 | Gap:   1.2817% | Nodes: 362179
+ 365840 13519    1.85908  103   10    1.85878    1.88136  1.21%  13.6  160s
+[PROGRESS] Time:   160.84s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.88033 | Gap:   1.1596% | Nodes: 368816
+[PROGRESS] Time:   162.84s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.87823 | Gap:   1.0464% | Nodes: 375386
+[PROGRESS] Time:   164.84s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.87658 | Gap:   0.9577% | Nodes: 381955
+ 382527 13429    1.86308   98   14    1.85878    1.87642  0.95%  13.1  165s
+[PROGRESS] Time:   167.44s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.87515 | Gap:   0.8809% | Nodes: 387919
+[PROGRESS] Time:   169.44s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.87374 | Gap:   0.8050% | Nodes: 394634
+ 396454 13460 infeasible  100         1.85878    1.87341  0.79%  12.8  170s
+[PROGRESS] Time:   171.44s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.87248 | Gap:   0.7373% | Nodes: 401257
+[PROGRESS] Time:   173.44s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.87145 | Gap:   0.6814% | Nodes: 407908
+ 413115 13895    1.86782   95   10    1.85878    1.87066  0.64%  12.4  175s
+[PROGRESS] Time:   175.44s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.87046 | Gap:   0.6286% | Nodes: 414620
+[PROGRESS] Time:   177.44s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86964 | Gap:   0.5843% | Nodes: 421264
+[PROGRESS] Time:   179.44s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86881 | Gap:   0.5399% | Nodes: 428105
+ 429955 14267 infeasible  103         1.85878    1.86862  0.53%  12.0  180s
+[PROGRESS] Time:   181.44s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86813 | Gap:   0.5029% | Nodes: 434719
+[PROGRESS] Time:   183.44s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86754 | Gap:   0.4714% | Nodes: 441327
+ 446257 15056 infeasible  102         1.85878    1.86714  0.45%  11.6  185s
+[PROGRESS] Time:   185.44s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86702 | Gap:   0.4434% | Nodes: 447711
+[PROGRESS] Time:   187.44s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86653 | Gap:   0.4167% | Nodes: 454387
+[PROGRESS] Time:   189.44s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86608 | Gap:   0.3929% | Nodes: 460527
+ 462432 16018    1.86207  104    8    1.85878    1.86596  0.39%  11.3  190s
+[PROGRESS] Time:   191.44s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86566 | Gap:   0.3700% | Nodes: 467103
+[PROGRESS] Time:   193.44s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86524 | Gap:   0.3478% | Nodes: 473677
+ 478820 16441    1.85927  111    6    1.85878    1.86490  0.33%  11.0  195s
+[PROGRESS] Time:   195.44s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86480 | Gap:   0.3238% | Nodes: 480402
+[PROGRESS] Time:   197.44s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86433 | Gap:   0.2988% | Nodes: 487216
+[PROGRESS] Time:   199.44s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86387 | Gap:   0.2736% | Nodes: 494433
+ 495352 16654 infeasible  103         1.85878    1.86382  0.27%  10.7  200s
+[PROGRESS] Time:   201.44s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86362 | Gap:   0.2604% | Nodes: 499160
+[PROGRESS] Time:   203.44s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86324 | Gap:   0.2402% | Nodes: 506087
+ 511588 17118    1.85893  104   12    1.85878    1.86300  0.23%  10.4  205s
+[PROGRESS] Time:   205.44s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86294 | Gap:   0.2237% | Nodes: 513213
+[PROGRESS] Time:   207.44s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86267 | Gap:   0.2092% | Nodes: 520127
+[PROGRESS] Time:   209.44s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86244 | Gap:   0.1970% | Nodes: 527029
+ 528907 17858 infeasible  108         1.85878    1.86238  0.19%  10.2  210s
+[PROGRESS] Time:   211.44s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86225 | Gap:   0.1865% | Nodes: 534012
+H537335 18786                       1.8587796    1.86216  0.18%  10.0  212s
+[PROGRESS] Time:   213.45s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86209 | Gap:   0.1779% | Nodes: 540191
+ 545592 19434    1.85967  106   13    1.85878    1.86195  0.17%   9.9  215s
+[PROGRESS] Time:   215.45s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86192 | Gap:   0.1687% | Nodes: 547154
+[PROGRESS] Time:   217.45s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86177 | Gap:   0.1608% | Nodes: 553917
+[PROGRESS] Time:   219.45s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86161 | Gap:   0.1525% | Nodes: 561053
+ 563063 20841 infeasible  108         1.85878    1.86157  0.15%   9.7  220s
+[PROGRESS] Time:   221.45s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86145 | Gap:   0.1438% | Nodes: 567896
+[PROGRESS] Time:   223.45s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86126 | Gap:   0.1333% | Nodes: 574954
+ 580361 21119 infeasible  112         1.85878    1.86114  0.13%   9.4  225s
+[PROGRESS] Time:   225.45s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86111 | Gap:   0.1253% | Nodes: 581918
+[PROGRESS] Time:   227.45s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86095 | Gap:   0.1166% | Nodes: 588812
+H590613 21175                       1.8587796    1.86091  0.11%   9.3  227s
+H595044 21192                       1.8587796    1.86081  0.11%   9.3  229s
+[PROGRESS] Time:   229.45s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86080 | Gap:   0.1088% | Nodes: 595411
+ 597115 21156 infeasible  100         1.85878    1.86075  0.11%   9.2  230s
+[PROGRESS] Time:   231.45s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86066 | Gap:   0.1009% | Nodes: 601990
+[PROGRESS] Time:   233.54s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86057 | Gap:   0.0963% | Nodes: 606963
+ 611874 21819 infeasible  105         1.85878    1.86050  0.09%   9.1  235s
+[PROGRESS] Time:   235.54s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86047 | Gap:   0.0911% | Nodes: 613716
+[PROGRESS] Time:   237.54s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86039 | Gap:   0.0866% | Nodes: 620274
+[PROGRESS] Time:   239.54s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86032 | Gap:   0.0829% | Nodes: 627540
+ 629054 23088    1.85891  113   10    1.85878    1.86030  0.08%   8.9  240s
+[PROGRESS] Time:   241.54s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86025 | Gap:   0.0793% | Nodes: 634618
+[PROGRESS] Time:   243.55s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86019 | Gap:   0.0758% | Nodes: 641525
+ 646303 23967    1.85882  109    7    1.85878    1.86015  0.07%   8.7  245s
+[PROGRESS] Time:   245.55s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86013 | Gap:   0.0727% | Nodes: 648208
+[PROGRESS] Time:   247.55s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86008 | Gap:   0.0697% | Nodes: 655170
+[PROGRESS] Time:   249.55s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.86002 | Gap:   0.0668% | Nodes: 661918
+ 663538 24502    1.85889  110   11    1.85878    1.86001  0.07%   8.5  250s
+[PROGRESS] Time:   251.55s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.85997 | Gap:   0.0641% | Nodes: 668823
+[PROGRESS] Time:   253.55s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.85992 | Gap:   0.0615% | Nodes: 675411
+ 680313 25125 infeasible  110         1.85878    1.85989  0.06%   8.4  255s
+[PROGRESS] Time:   255.55s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.85987 | Gap:   0.0589% | Nodes: 682160
+[PROGRESS] Time:   257.55s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.85983 | Gap:   0.0563% | Nodes: 689073
+[PROGRESS] Time:   259.55s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.85978 | Gap:   0.0538% | Nodes: 695891
+ 697497 25496    1.85955  114    9    1.85878    1.85977  0.05%   8.2  260s
+[PROGRESS] Time:   261.55s | Event: PERIODIC | ObjVal:    1.85878 | BestBound:    1.85973 | Gap:   0.0514% | Nodes: 702709
+
+Cutting planes:
+  Learned: 1
+  Gomory: 2
+  Implied bound: 5
+  Projected implied bound: 13
+  MIR: 5
+  Flow cover: 15
+  Inf proof: 3
+  RLT: 10
+  Relax-and-lift: 8
+
+Explored 705787 nodes (5744299 simplex iterations) in 262.46 seconds (324.27 work units)
+Thread count was 1 (of 20 available processors)
+
+Solution count 10: 1.85878 1.85878 1.85878 ... 1.85822
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 1.858779601421e+00, best bound 1.859708930112e+00, gap 0.0500%
+
+User-callback calls 1452778, time in user-callback 1.36 sec
+
+================================================================================
+SUMMARY_REPORT:
+  Method           : M1_OrderPrune
+  N                : 11
+  Status           : OPTIMAL
+  ObjVal           : 1.85878
+  BestBound        : 1.85971
+  MIPGap_Pct       : 0.0500%
+  Runtime_Sec      : 262.4585
+  FirstSol_Sec     : 0.4913
+  NodeCount        : 705787
+  SolCount         : 10
+================================================================================
+
+STACK_CONFIGURATION:
+  Layer  6 | Block 11 | Center X:  0.35878 | Supported by: [8, 9]
+  Layer  5 | Block 10 | Center X: -0.79352 | Supported by: [7]
+  Layer  5 | Block  9 | Center X:  0.20648 | Supported by: [6, 7]
+  Layer  5 | Block  8 | Center X:  1.35878 | Supported by: [6]
+  Layer  4 | Block  7 | Center X: -0.29352 | Supported by: [4, 5]
+  Layer  4 | Block  6 | Center X:  0.76470 | Supported by: [4]
+  Layer  3 | Block  5 | Center X: -0.66462 | Supported by: [2, 3]
+  Layer  3 | Block  4 | Center X:  0.33538 | Supported by: [2]
+  Layer  2 | Block  3 | Center X: -0.99990 | Supported by: [1]
+  Layer  2 | Block  2 | Center X:  0.00010 | Supported by: [1]
+  Layer  1 | Block  1 | Center X: -0.27268 | Supported by: [0]
+INFO: Saved visualization to results_N6_35/M1_OrderPrune_N11.png
+--- EXPERIMENT END | METHOD = M1_OrderPrune | N = 11 ---
