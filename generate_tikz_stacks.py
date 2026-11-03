@@ -150,7 +150,7 @@ def render_single_panel_tikz(blocks, obj_val, panel_title, W=0.5, target_h=2.65,
             lines.append(f"  \\node[font=\\tiny, inner sep=0.2pt] at ({cx:.4f}, {ym:.4f}) {{{b_id}}};")
 
     lines.append(f"  \\draw[densely dotted, red!80!black, thick] ({obj_val:.4f}, 0.000) -- ({obj_val:.4f}, {(max_layer + 0.55)*bh:.3f});")
-    lines.append(f"  \\node[anchor=south, font=\\scriptsize, text=red!80!black, inner sep=1pt] at ({obj_val:.4f}, {(max_layer + 0.57)*bh:.3f}) {{$z={obj_val:.4f}$}};")
+    lines.append(f"  \\node[anchor=south, font=\\scriptsize, text=red!80!black, inner sep=1pt] at ({obj_val:.4f}, {(max_layer + 0.57)*bh:.3f}) {{$z={obj_val:.5f}$}};")
     lines.append(f"  \\node[anchor=north, font=\\scriptsize\\bfseries] at ({0.5*(tbl_left + max_x):.3f}, {-1.30*bh:.3f}) {{{panel_title}}};")
     lines.append(r"\end{tikzpicture}")
     return "\n".join(lines)
@@ -220,7 +220,7 @@ def main():
     # Section A specifications (eta = 0.00, N = 6..35)
     sec_a_groups = [
         ([6, 7, 8, 9, 10, 11],
-         r"Certified Optimal Stack Configurations for $N \in \{6, 7, 8, 9, 10, 11\}$ Under $\eta = 0.00$",
+         r"Optimal Stack Configurations for $N \in \{6, 7, 8, 9, 10, 11\}$ Under $\eta = 0.00$ Certified Unconditionally by $\mathcal{M}_0$",
          "fig:app_optimal_6_11",
          common_note + r" Numbers inside blocks indicate block indices $i \in \mathcal{N}$.",
          2.55, 0.22, "4pt"),
@@ -265,11 +265,11 @@ def main():
         return specs
 
     sec_b_groups = [
-        (6, 7, r"Certified Optimal Stack Configurations Across $\eta \in \{0.01, 0.02, 0.05, 0.10\}$ for $N \in \{6, 7\}$",
+        (6, 7, r"Spinal-Regime Certified Stack Configurations Across $\eta \in \{0.01, 0.02, 0.05, 0.10\}$ for $N \in \{6, 7\}$",
          "fig:app_pareto_6_7", 2.15, 0.20, "4pt"),
-        (8, 9, r"Certified Optimal Stack Configurations Across $\eta \in \{0.01, 0.02, 0.05, 0.10\}$ for $N \in \{8, 9\}$",
+        (8, 9, r"Spinal-Regime Certified Stack Configurations Across $\eta \in \{0.01, 0.02, 0.05, 0.10\}$ for $N \in \{8, 9\}$",
          "fig:app_pareto_8_9", 2.55, 0.22, "6pt"),
-        (10, 11, r"Certified Optimal Stack Configurations Across $\eta \in \{0.01, 0.02, 0.05, 0.10\}$ for $N \in \{10, 11\}$",
+        (10, 11, r"Spinal-Regime Certified Stack Configurations Across $\eta \in \{0.01, 0.02, 0.05, 0.10\}$ for $N \in \{10, 11\}$",
          "fig:app_pareto_10_11", 2.55, 0.21, "6pt"),
         (12, 20, r"Balanced Stack Configurations Across $\eta \in \{0.01, 0.02, 0.05, 0.10\}$ for $N \in \{12, 20\}$",
          "fig:app_pareto_12_20", 2.55, 0.21, "6pt"),
